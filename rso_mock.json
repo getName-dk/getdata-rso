@@ -1,0 +1,10 @@
+{
+  "status": "mock_only",
+  "message": "RSO is not active in this demo. This screen shows the planned flow after Riot approval.",
+  "planned_redirect_uri": "http://localhost:8787/callback",
+  "collected_after_opt_in": [
+    "puuid",
+    "gameName",
+    "tagLine"
+  ]
+}

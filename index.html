@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>getData RSO - Private Local LoL Custom Game Statistics Tool</title>
+<style>
+:root {
+  --bg: #0b1020;
+  --panel: #121a33;
+  --panel2: #17203c;
+  --text: #eef3ff;
+  --muted: #aab6d3;
+  --line: #263153;
+  --accent: #59a8ff;
+  --gold: #f7c948;
+  --good: #59d68c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, Arial, sans-serif;
+  background: radial-gradient(circle at top left, #1b2f5f, var(--bg) 45%);
+  color: var(--text);
+  line-height: 1.6;
+}
+a { color: var(--accent); text-decoration: none; }
+.container { max-width: 1080px; margin: 0 auto; padding: 32px 20px 64px; }
+.nav {
+  display: flex; justify-content: space-between; align-items: center;
+  border-bottom: 1px solid var(--line); padding-bottom: 16px; margin-bottom: 48px;
+}
+.nav .brand { font-weight: 800; letter-spacing: .2px; }
+.nav .links a { margin-left: 18px; color: var(--muted); }
+.hero {
+  padding: 42px;
+  border: 1px solid var(--line);
+  background: linear-gradient(135deg, rgba(23,32,60,.92), rgba(18,26,51,.82));
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(0,0,0,.25);
+}
+.badge {
+  display:inline-block; padding: 6px 12px; border:1px solid #31507f;
+  color:#b8d9ff; border-radius:999px; font-size: 13px; margin-bottom: 18px;
+}
+h1 { font-size: 44px; line-height:1.15; margin: 0 0 16px; }
+h2 { margin-top: 46px; font-size: 28px; }
+h3 { margin-top: 24px; }
+p { color: var(--muted); }
+.grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 24px; }
+.card {
+  border: 1px solid var(--line); background: rgba(18,26,51,.72);
+  border-radius: 20px; padding: 22px;
+}
+.card strong { color: var(--text); }
+.kpi { color: var(--gold); font-weight: 800; font-size: 26px; display:block; }
+ul { color: var(--muted); }
+.footer { margin-top: 60px; color: var(--muted); border-top:1px solid var(--line); padding-top: 22px; font-size: 13px; }
+.cta {
+  display:inline-block; margin-top: 18px; padding: 12px 18px; border-radius: 12px;
+  background: var(--accent); color: #07101f; font-weight: 800;
+}
+.notice { border-left: 4px solid var(--gold); padding: 12px 16px; background: rgba(247,201,72,.08); border-radius: 10px; }
+.code { background:#070b16; border:1px solid var(--line); border-radius: 14px; padding: 16px; overflow:auto; color:#dce7ff; }
+@media (max-width: 760px) {
+  h1 { font-size: 34px; }
+  .grid { grid-template-columns: 1fr; }
+  .hero { padding: 26px; }
+  .nav { align-items:flex-start; gap:12px; flex-direction:column; }
+  .nav .links a { margin-left:0; margin-right:14px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+    <div class="nav">
+      <div class="brand">getData RSO Demo</div>
+      <div class="links">
+        <a href="index.html">Overview</a>
+        <a href="demo.html">Demo</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    
+<section class="hero">
+  <span class="badge">Private local administrator tool for a small League of Legends custom game group</span>
+  <h1>getData RSO</h1>
+  <p>
+    getData Remaster is not a distributed end-user application. It is a private local administrator tool used by the
+    getData operator to manage manually entered League of Legends custom game records for a small friend group.
+  </p>
+  <p>
+    Participants may voluntarily authorize Riot Sign On so the operator can read Riot account and custom match data
+    through approved Riot APIs. The operator then imports or reviews that data locally in getData Remaster.
+    Generated summaries are shared through a private Telegram bot to authorized bot users and private group chats.
+  </p>
+  <a class="cta" href="demo.html">View Demo Flow</a>
+</section>
+
+<h2>Actual Operating Model</h2>
+<div class="grid">
+  <div class="card"><span class="kpi">01</span><strong>User opt-in through RSO</strong><p>Participants explicitly grant access through Riot Sign On before their Riot data is used.</p></div>
+  <div class="card"><span class="kpi">02</span><strong>Local admin processing</strong><p>The getData operator imports, reviews, and stores match data in a private local getData Remaster database.</p></div>
+  <div class="card"><span class="kpi">03</span><strong>Private Telegram output</strong><p>Statistics and summaries are shown only to authorized Telegram bot users and private group chats.</p></div>
+</div>
+
+<h2>What getData Is Not</h2>
+<ul>
+  <li>It is not a public website or public leaderboard.</li>
+  <li>It is not a distributed consumer application.</li>
+  <li>It is not commercial and is not used for gambling, betting, or esports wagering.</li>
+  <li>It does not sell or expose player data publicly.</li>
+</ul>
+
+<h2>Data Use Summary</h2>
+<ul>
+  <li>Riot account identity after opt-in: PUUID, gameName, tagLine.</li>
+  <li>League of Legends custom match data after opt-in: match identifier, champion, KDA, damage, gold, vision score, CS, items, and summoner spells.</li>
+  <li>Local getData usage: private match registration, migration candidates, MVP/ACE records, rankings, performance scores, and monthly/session summaries.</li>
+  <li>Telegram usage: private display of generated summaries to authorized bot users and configured private group chats.</li>
+  <li>Users can disconnect their Riot account and request deletion of stored mappings or tokens.</li>
+</ul>
+
+<div class="notice">
+  This demo package uses only sample data. No real Riot API keys, RSO client secrets, access tokens, or private match records are included.
+</div>
+
+<div class="footer">
+  getData is not endorsed by Riot Games and does not reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties.
+  Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
+</div>
+</div>
+</body>
+</html>

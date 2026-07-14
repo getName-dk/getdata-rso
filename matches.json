@@ -1,0 +1,22 @@
+[
+  {
+    "legacy_game_id": "legacy_demo_20260714_001",
+    "date": "2026-07-14",
+    "session": "Demo Session 01",
+    "team_a_result": "WIN",
+    "team_b_result": "LOSS",
+    "status": "manual_legacy",
+    "note": "Sample data only. Legacy team A/B is not treated as Riot blue/red."
+  },
+  {
+    "legacy_game_id": "legacy_demo_20260714_002",
+    "date": "2026-07-14",
+    "session": "Demo Session 01",
+    "team_a_result": "LOSS",
+    "team_b_result": "WIN",
+    "status": "migration_candidate",
+    "candidate_match_id": "KR_DEMO_1234567890",
+    "confidence": 94,
+    "team_mapping": "reversed"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "legacy_game_id": "legacy_demo_20260714_002",
+    "match_id": "KR_DEMO_1234567890",
+    "confidence": 94,
+    "status": "review_required",
+    "team_mapping": "reversed",
+    "evidence": {
+      "date_near": true,
+      "champion_matches": 9,
+      "kda_matches": 8,
+      "participant_matches": 6,
+      "legacy_team_color_trusted": false
+    }
+  }
+]

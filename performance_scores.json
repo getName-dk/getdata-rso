@@ -1,0 +1,35 @@
+[
+  {
+    "player": "Player A",
+    "score": 87.4,
+    "rank": 1,
+    "tags": [
+      "MVP",
+      "Damage Leader"
+    ]
+  },
+  {
+    "player": "Player F",
+    "score": 76.1,
+    "rank": 2,
+    "tags": [
+      "ACE"
+    ]
+  },
+  {
+    "player": "Player B",
+    "score": 74.8,
+    "rank": 3,
+    "tags": [
+      "Objective Pressure"
+    ]
+  },
+  {
+    "player": "Player E",
+    "score": 71.2,
+    "rank": 4,
+    "tags": [
+      "Vision Leader"
+    ]
+  }
+]
